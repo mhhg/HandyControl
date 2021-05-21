@@ -5,12 +5,8 @@
              xmlns:hc="https://handyorg.github.io/handycontrol">
     <hc:TransitioningContentControl>
         <UniformGrid Columns="3" Margin="16">
-            <hc:ImageSelector Width="100" Height="100" Margin="16"/>
-            <hc:ImageSelector Width="100" Height="100" Margin="16" hc:BorderElement.CornerRadius="50"/>
-            <hc:ImageSelector Width="100" Height="100" Margin="16" hc:BorderElement.CornerRadius="50" StrokeDashArray="10,5"/>
-            <hc:ImageSelector Width="100" Height="100" Margin="16" hc:BorderElement.CornerRadius="50" BorderBrush="{DynamicResource SuccessBrush}"/>
-            <hc:ImageSelector Width="100" Height="100" Margin="16" hc:BorderElement.CornerRadius="50" StrokeDashArray="10,5,10" BorderBrush="{DynamicResource DangerBrush}"/>
-            <hc:ImageSelector Width="100" Height="100" Margin="16" hc:BorderElement.CornerRadius="10" StrokeThickness="2" BorderThickness="2" BorderBrush="{DynamicResource PrimaryBrush}"/>
+            <hc:ImageSelector x:Name="test" Width="100" Height="100" Margin="16" />
+            <Button Click="OnClick1" x:Name="button1" Content="Remove"/>
         </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>
